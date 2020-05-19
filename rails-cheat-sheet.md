@@ -8,3 +8,13 @@
 `exception.methods - Object.methods`  
 ### disable active-record validation
 `image_asset_link.save(validate: false)`   
+
+### View entire Pry-history
+`cat ~/.pry-history`	
+
+### make routes accessible in console  
+
+```ruby 
+include Rails.application.routes.url_helpers
+users_path #=> '/users/
+```
