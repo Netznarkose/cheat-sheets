@@ -18,3 +18,12 @@
 include Rails.application.routes.url_helpers
 users_path #=> '/users/
 ```
+
+## Eager Loading (Preloading)
+```ruby
+# fetch Producttests and preload associated model Participants on the fly  
+pt = Bl::Producttest.preload(:participants)
+
+# check that Participants go loaded
+pt.first.association_cache.keys # => [:participants, :participation_requests]
+```
