@@ -12,7 +12,7 @@
 ### View entire Pry-history
 `cat ~/.pry-history`	
 
-### make routes accessible in console  
+### make url_helpers accessible in rails console  
 
 ```ruby 
 include Rails.application.routes.url_helpers
